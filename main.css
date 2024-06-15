@@ -1,0 +1,47 @@
+.copyright-icon {
+  height: 36px;
+  width: 60px;
+  position: relative;
+  object-fit: contain;
+}
+.schematiq1 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+.main,
+.schematiq-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.schematiq-container {
+  flex-direction: column;
+  padding: var(--padding-7xs) 0 0;
+}
+.main {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-direction: row;
+  padding: 34px 18px;
+  box-sizing: border-box;
+  gap: var(--gap-7xl);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .schematiq1 {
+    font-size: var(--font-size-base);
+  }
+}
+@media screen and (max-width: 264px) {
+  .main {
+    flex-wrap: wrap;
+  }
+}
